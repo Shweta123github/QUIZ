@@ -18,7 +18,7 @@ public class Mainclass {
 
 	   }  
 	        System.out.println();
-			System.out.println("/*\\/*\\Data Loaded/*\\/*\\");
+			System.out.println( "*Data Loaded*");
 			System.out.println("       |");
 			System.out.println("       |");
 			System.out.println("       |");
@@ -37,15 +37,12 @@ public class Mainclass {
 			case 1:
 				System.out.println("Start quiz");
 				
-				Jdbc_connection jb=new Jdbc_connection();
-				jb.methodconnection();
-				
 				Start_quiz sq=new Start_quiz();
 				sq. methodstart();
 				Thread.sleep(3000);
 				
-				/*Jdbc_connection jb=new Jdbc_connection();
-				jb.methodconnection();*/
+				Jdbc_connection jb=new Jdbc_connection();
+				jb.methodconnection();
 			
 				Score_check sc=new Score_check();
 				sc.methodscore();
